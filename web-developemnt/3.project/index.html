@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Website</title>
+</head>
+
+<body>
+
+    <nav>
+        <ul class="top-nav" id="drop-down-click">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li class="top-nav-right"><a href="signup">Sign up</a></li>
+            <li class="top-nav-right"><a href="signin">Sign In</a></li>
+
+            <li class="drop-down-icon"><a href="javascript:void(0)" id="ham-menu">&#9776</a></li>
+        </ul>
+    </nav>
+
+    <div class="container" id="section-1-gradient">
+        <div class="row">
+
+            <div class="col-6">
+                <div class="left-side-col">
+                    <div>
+                        <h1 class="large-h1">Crazy Radness</h1>
+                        <h1 class="large-h1">Made for developer</h1>
+                    </div>
+                    <form>
+                        <div>
+                            <h2>Username</h2>
+                            <input class="input-box" type="text" name="username" placeholder="user name">
+                            <h2>Password</h2>
+                            <input class="input-box" type="text" name="password" placeholder="password">
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-6">
+                <div class="right-side-col">
+                    <div class="video-container">
+                        <iframe width="560px" height="315px" src="https://www.youtube.com/embed/UB1O30fR-EE"
+                            frameborder="1"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <h1 class="section-2-header">The Standard of Awesomeness</h1>
+    </header>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-4">
+                <div class="box">
+                    <div class="icon">
+                        <img src="./devIcon.png" />
+                    </div>
+                    <label>Chat with me</label>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quae dicta vel sit laboriosam ipsum
+                    </p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="box">
+                    <div class="icon">
+                        <img src="./devIcon.png" />
+                    </div>
+                    <label>Learn to code</label>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quae dicta vel sit laboriosam ipsum
+                    </p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="box">
+                    <div class="icon">
+                        <img src="./devIcon.png" />
+                    </div>
+                    <label>Build an Empire</label>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quae dicta vel sit laboriosam ipsum
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <button class="learn-more"> Learn More</button>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-7">
+                <article>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate voluptas ipsum ab tempora,
+                        consectetur sunt itaque, unde quaerat maiores ad dolorem eos nobis quam, cum quibusdam nulla non
+                        nostrum sint?
+                    </p>
+                </article>
+            </div>
+            <div class="col-5">
+                <div class="slop-icon">
+                    <img src="./iOS_Slope.png" alt="iOS_Slope">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="foot-sy">
+        <div class="row">
+            <div class="col-3 mobile-stack">
+                <h1>Company</h1>
+                <ul>
+                    <li>About</li>
+                    <li>Blogs</li>
+                    <li>Careers</li>
+                </ul>
+            </div>
+            <div class="col-3 mobile-stack">
+                <h1>Company</h1>
+                <ul>
+                    <li>About</li>
+                    <li>Blogs</li>
+                    <li>Careers</li>
+                </ul>
+            </div>
+            <div class="col-3 mobile-stack">
+                <h1>Company</h1>
+                <ul>
+                    <li>About</li>
+                    <li>Blogs</li>
+                    <li>Careers</li>
+                </ul>
+            </div>
+            <div class="col-3 mobile-stack">
+                <h1>Company</h1>
+                <ul>
+                    <li>About</li>
+                    <li>Blogs</li>
+                    <li>Careers</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const ham = document.getElementById("ham-menu")
+        ham.addEventListener("click", (e) => {
+            const nav = document.getElementById("drop-down-click")
+            if (nav.className === "top-nav") {
+                nav.className += " responsive";
+            } else {
+                nav.className = "top-nav";
+            }
+        })
+    </script>
+
+</body>
+
+</html>

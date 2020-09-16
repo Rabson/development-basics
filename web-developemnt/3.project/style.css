@@ -1,0 +1,277 @@
+/* ############### Defaults ################ */
+
+* {
+    box-sizing: border-box;
+}
+
+nav, 
+header,
+footer {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    margin: 0;
+}
+
+label {
+    font-size: 35px;
+    font-weight: 600;
+}
+p {
+    font-size: 28px;
+    line-height: 1.2;
+}
+article p {
+    font-size: 35px;
+    padding: 20px;
+}
+.container {
+    width: 100%;
+    margin: auto;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.row::after {
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.col-1{width: 8.33%;}
+.col-2{width: 16.66%;}
+.col-3{width: 25%;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.66%;}
+.col-6{width: 50%;}
+.col-7{width: 58.33%;}
+.col-8{width: 66.66%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12{width: 100%;}
+
+/* ############### Nav bar ################ */
+
+nav {
+    width: 100%;
+    margin: 0;
+}
+
+nav ul {
+    background-color: #eeeeee;
+    overflow: hidden; 
+    padding: 0;
+    margin: 0;
+}
+ul.top-nav li {
+    list-style: none;
+    float: left;
+    /* display: inline; */
+}
+
+ul.top-nav li.top-nav-right  {
+    float: right;
+}
+
+ul.top-nav li a {
+    display: block;
+    text-decoration: none;
+    /* font-size: 16px; */
+    min-height: 16px;
+    text-align: center;
+    padding: 14px;
+    text-transform: uppercase;
+    color: #666;
+}
+
+ul.top-nav li a:hover {
+    color: #fff;
+    background-color: #0080ff;
+}
+ul.top-nav li.drop-down-icon{
+    display: none;
+}
+
+/* ############### Custom style ################ */
+#section-1-gradient {
+    background: #076DFF;
+    background: -webkit-linear-gradient(#076DFF,#65a5ff);
+}
+div.box {
+    text-align: center;
+    margin: 24px;
+    border-radius:7px;
+    padding: 36px 24px 40px 24px;
+    background-color: #fff;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.15)
+    ,0 2px 3px 0px rgba(0,0,0,.1);
+}
+
+div.slop-icon img {
+    display: block;
+    margin: auto;
+    box-shadow: -2px -2px 5px 2px rgba(0,0,0,.15),
+    2px 2px 17px 2px rgba(0,0,0,1);
+}
+
+button {
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #0069ff;
+    padding: 15px 60px;
+    display: block;
+    text-align: center;
+    margin: 5px;
+    border-radius: 7px;
+}
+button.learn-more{
+    display: block;
+    margin: auto;
+}
+div.icon {
+    width: 100%;
+}
+div.left-side-col {
+    margin-left: 15%;
+}
+
+div.right-side-col {
+    margin-left: 15%;
+}
+
+.large-h1 {
+    color: #fff;
+    font-size: 56px;
+    margin: 0;
+    line-height: 70px;
+}
+
+h1.section-2-header {
+    margin: 0;
+    font-size: 65px;
+    text-align: center;
+}
+
+form h2 {
+    color: #fff;
+
+}
+input[type="text"] {
+    font-size: 20px;
+    width: 400px;
+    min-width: 100px;
+    padding: 5px;
+    border-radius: 7px;
+}
+footer.foot-sy {
+    background-color: #666;
+    padding-left:10%;
+}
+footer.foot-sy h1 {
+    color: #fff;
+    font-size: 35px;
+}
+footer.foot-sy ul {
+    padding-left: 0;
+    list-style: none;
+    text-align: left;
+}
+
+footer.foot-sy ul li {
+    color: #fff;
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+/* ############### Mobile ################ */
+
+
+@media screen and (max-width:680px){
+    
+    ul.top-nav li:not(:nth-child(1)){
+        display: none;
+    }
+    ul.top-nav li.drop-down-icon{
+        display: block;
+        float: right;
+    }
+    ul.top-nav.responsive li.drop-down-icon {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    ul.top-nav.responsive {
+        position: relative;
+    }  
+    ul.top-nav.responsive li {
+        display: inline;
+        float: none;
+    }
+
+    ul.top-nav.responsive li a {
+        display: block;
+        text-align:left;
+    }
+
+    h1.section-2-header {
+        font-size: 50px;
+    }
+
+    article p {
+        font-size: 25px;
+    }
+
+    .col-4,
+    .col-5,
+    .col-6,
+    .col-7
+     {
+        width: 100%;
+        margin: 0;
+    }
+
+    div.mobile-stack {
+        width: 50%;
+        display: block;
+    }
+    div.box{
+        padding: 5px;
+        display: block;
+    }
+
+    div.slop-icon {
+        margin: 10px;
+    }
+    div.slop-icon img{
+        border-radius: 7px;
+        width: 100%;
+    }
+    
+    div.right-side-col, 
+    div.left-side-col {
+        margin: 15px;
+    }
+
+    input[type="text"] {
+        width: 300px;
+    }
+    
+    .video-container iframe{
+        position: relative;
+        width: 100%;
+        margin: 0;
+        overflow: hidden;
+    }
+    
+}
